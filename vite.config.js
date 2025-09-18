@@ -3,10 +3,10 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
-// https://vite.dev/config/
+// old config (works locally)
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/Portfolio-Sentry/',   // 👈 use repo name for GitHub Pages
+  base: './',   // ✅ works for local dev
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
