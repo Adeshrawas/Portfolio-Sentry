@@ -1,4 +1,6 @@
 import { Code, User, Briefcase } from "lucide-react";
+import Resume from "../assets/New Resume.pdf";
+ // your CV
 
 export const AboutSection = () => {
   return (
@@ -18,7 +20,7 @@ export const AboutSection = () => {
             </h3>
 
             <p className="mt-4 text-white leading-relaxed">
-              With over 5 years of experience in web development, I specialize
+              I specialize
               in creating responsive, accessible, and performant web applications
               using modern technologies.
             </p>
@@ -38,7 +40,9 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href=""
+                href={Resume}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
