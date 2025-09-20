@@ -1,4 +1,3 @@
-// Home.jsx
 import { Navbar } from "../Components/Navbar";
 import { HeroSection } from "../Components/HeroSection";
 import { AboutSection } from "../Components/AboutSection";
@@ -23,4 +22,4 @@ const Home = () => {
   );
 };
 
-export default Home; // ✅ default export
+export default Home;
