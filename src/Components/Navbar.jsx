@@ -25,17 +25,11 @@ export const Navbar = () => {
     <nav
       className={cn(
         "fixed w-full z-40 transition-all duration-300",
-        "bg-transparent", // stays fully clear
-        isScrolled ? "py-3 shadow" : "py-5" // only padding + shadow changes
+        "bg-transparent",
+        isScrolled ? "py-3 shadow" : "py-5"
       )}
     >
-      <div className="container flex items-center justify-between">
-        {/* Logo (TheSentry + Portfolio together in left corner) */}
-        <a href="#hero" className="text-xl font-bold flex items-center gap-1">
-          <span className="text-blue-300">TheSentry</span>
-          <span className="text-white">Portfolio</span>
-        </a>
-
+      <div className="container flex justify-end items-center">
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item, key) => (

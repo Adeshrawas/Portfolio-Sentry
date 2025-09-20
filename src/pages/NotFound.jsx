@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { StarBackground } from "../Components/StarBackground";
 import { Navbar } from "../Components/Navbar";
 
-export const NotFound = () => {
+export default function NotFound() {
   return (
     <div className="relative min-h-screen overflow-x-hidden">
       <StarBackground />
@@ -19,4 +19,4 @@ export const NotFound = () => {
       </div>
     </div>
   );
-};
+}

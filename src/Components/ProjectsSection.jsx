@@ -1,23 +1,34 @@
+// ProjectsSection.jsx
 const projects = [
     {
         id: 1,
         title: "WebRTC",
         description:
             "A peer-to-peer video chat application built using WebRTC and Socket.io that allows real-time communication between users, mimicking basic functionality of apps like Zoom.",
-        image: "/projects/project1.jpg",
+        image: "https://api.emphie.com/uploads/48db8a78d29f1130e507966964fb27b6_7cdcee162a.jpeg",
         tags: ["React", "TailwindCSS", "WebRTC", "Socket.io", "Node.js"],
         githubUrl: "https://github.com/Adeshrawas/webrtc-p2p",
     },
     {
         id: 2,
+        title: "Portfolio",
+        description:
+            "My personal portfolio website showcasing my projects, skills, and achievements as a web developer.",
+        image: "https://cdn.slidemodel.com/wp-content/uploads/21550-01-portfolio-presentation-template-16x9-1.jpg",
+        tags: ["React", "TailwindCSS", "JavaScript"],
+        githubUrl: "https://github.com/Adeshrawas/Portfolio-Sentry",
+    },
+    {
+        id: 3,
         title: "LeetCode Extension",
         description:
             "LeetCode Whisper is a lightweight Chrome Extension designed to enhance the competitive programming experience on LeetCode.",
-        image: "/projects/project2.png",
+        image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*2i9TlQ8_EFSs3T741jrmig.png",
         tags: ["JavaScript", "React", "TailwindCSS", "Chrome API"],
         githubUrl: "https://github.com/Adeshrawas/leetcode-extension",
     },
 ];
+
 
 export const ProjectsSection = () => {
     return (
@@ -32,14 +43,13 @@ export const ProjectsSection = () => {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projects.map((project, key) => (
+                    {projects.map((project) => (
                         <div
-                            key={key}
-                            className="group rounded-lg overflow-hidden flex flex-col h-full
-                                       shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                            key={project.id}
+                            className="group rounded-lg overflow-hidden flex flex-col h-full shadow-lg hover:shadow-2xl transition-shadow duration-300"
                         >
                             {/* Image */}
-                            <div className="flex justify-center items-center h-48 overflow-hidden">
+                            <div className="flex justify-center items-center h-48 overflow-hidden bg-gray-900">
                                 <img
                                     src={project.image}
                                     alt={project.title}
@@ -48,8 +58,7 @@ export const ProjectsSection = () => {
                             </div>
 
                             {/* Overlay / Text */}
-                            <div className="p-6 flex flex-col flex-grow
-                                            bg-gray-900/30 backdrop-blur-md rounded-b-lg">
+                            <div className="p-6 flex flex-col flex-grow bg-gray-900/30 backdrop-blur-md rounded-b-lg">
                                 <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                                 <p className="text-gray-200 mb-4 flex-grow">{project.description}</p>
 

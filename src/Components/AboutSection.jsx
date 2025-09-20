@@ -16,7 +16,7 @@ export const AboutSection = () => {
             </h2>
 
             <h3 className="mt-6 text-xl font-semibold text-white">
-              Passionate Web Developer & Tech Creator
+              Passionate Web Developer
             </h3>
 
             <p className="mt-4 text-white leading-relaxed">

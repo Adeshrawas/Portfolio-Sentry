@@ -1,12 +1,13 @@
+// Home.jsx
 import { Navbar } from "../Components/Navbar";
 import { HeroSection } from "../Components/HeroSection";
 import { AboutSection } from "../Components/AboutSection";
 import { StarBackground } from "../Components/StarBackground";
 import { SkillSection } from "../Components/SkillsSection";
 import { ProjectsSection } from "../Components/ProjectsSection";
-import { ContactSection } from "../Components/ContactSection"; // ✅ Import ContactSection
+import { ContactSection } from "../Components/ContactSection";
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className="relative">
       <StarBackground />
@@ -16,8 +17,10 @@ export const Home = () => {
         <AboutSection />
         <SkillSection />
         <ProjectsSection />
-        <ContactSection />  {/* ✅ Add ContactSection here */}
+        <ContactSection />
       </div>
     </div>
   );
 };
+
+export default Home; // ✅ default export
